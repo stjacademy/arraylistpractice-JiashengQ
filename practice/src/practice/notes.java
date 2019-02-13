@@ -15,14 +15,26 @@ public class notes {
 		System.out.println(grades[i]);
 		*/
 		// ArrayList [] XXXXX NEVER
-		ArrayList<Integer> grades=new ArrayList<Integer>(); 
+		ArrayList<String> grades=new ArrayList<String>(); 
 	    
-		grades.add(92);
-		grades.add(22);
-		grades.add(28);
-		grades.add(29);
+		grades.add("Paul");
+		grades.add("pete");
+		grades.add("John");
+		grades.add("George");
+		//grades.remove(1);
+		grades.add(1,"Ringo");
+		//grades.add("Christine");
+		//String removed=(String)grades.remove(grades.size()-1);
+		System.out.println("Band: " + grades);
+		System.out.println("Size of the band: "+ grades.size());
+		/*grades.add(grades.remove(2));
+		grades.add(0,grades.get(4));
 		
-		System.out.println(grades);
+		grades.set(2, "Christine");*/
+		
+		//System.out.println(removed);
+		
+		/*System.out.println(grades);
 	    //System.out.println("I removed the "+ grades.remove(2));
 	    grades.add(1, 99);
 	    
@@ -34,6 +46,10 @@ public class notes {
 	   for (int i=0; i<grades.size();i++) {
 		   System.out.println(grades.get(i));
 	   }
+	   for (Integer num:grades)
+		   System.out.println(num);
+	   grades.remove(grades.get(0));
+	   // never remove in a for-each loop */
 	   
 	}
 
